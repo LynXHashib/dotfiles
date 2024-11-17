@@ -17,8 +17,9 @@
     "pulseaudio",
     "bluetooth",
     "battery",
-    "group/hardware",
+
     "network",
+    "group/hardware",
     "clock",
     "custom/power"
   ]

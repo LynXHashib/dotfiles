@@ -16,7 +16,7 @@ export PATH="${PATH}:${HOME}/.local/bin/"
 
 #     echo "Successfully set a new wallpaper and generated colors from it."
 # fi
-swww-daemon
+swww init
 DIR=$HOME/wallpaper
     PICS=($(ls ${DIR}))
 
