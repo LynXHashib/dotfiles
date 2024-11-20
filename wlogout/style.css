@@ -1,0 +1,90 @@
+@import '../../.cache/wal/colors-waybar.css';
+
+@define-color backgroundlight @color5;
+@define-color backgrounddark @color11;
+@define-color workspacesbackground1 @color5;
+@define-color workspacesbackground2 @color11;
+@define-color bordercolor @color11;
+@define-color textcolor1 #000000;
+@define-color textcolor2 #000000;
+@define-color textcolor3 #ffffff;
+@define-color bordercolorlight #ffffff;
+@define-color bordercolordark #000000;
+@define-color iconcolor #000000;
+
+* {
+  font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+  background-image: none;
+  transition: 20ms;
+  box-shadow: none;
+}
+
+window {
+  background: url('../../.cache/blurred_wallpaper.png');
+  background-size: cover;
+}
+
+button {
+  color: #ffffff;
+  font-size: 20px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25%;
+
+  border-style: solid;
+  background-color: rgba(12, 12, 12, 0.3);
+  border: 3px solid #ffffff;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+button:focus,
+button:active,
+button:hover {
+  color: @color11;
+  background-color: rgba(12, 12, 12, 0.5);
+  border: 3px solid @color11;
+}
+
+/* 
+----------------------------------------------------- 
+Buttons
+----------------------------------------------------- 
+*/
+
+#lock {
+  margin: 10px;
+  border-radius: 20px;
+  background-image: image(url('icons/lock.png'));
+}
+
+#logout {
+  margin: 10px;
+  border-radius: 20px;
+  background-image: image(url('icons/logout.png'));
+}
+
+#suspend {
+  margin: 10px;
+  border-radius: 20px;
+  background-image: image(url('icons/suspend.png'));
+}
+
+#hibernate {
+  margin: 10px;
+  border-radius: 20px;
+  background-image: image(url('icons/hibernate.png'));
+}
+
+#shutdown {
+  margin: 10px;
+  border-radius: 20px;
+  background-image: image(url('icons/shutdown.png'));
+}
+
+#reboot {
+  margin: 10px;
+  border-radius: 20px;
+  background-image: image(url('icons/reboot.png'));
+}
