@@ -1,6 +1,11 @@
 neofetch/config.conf
 session/dolphin_dolphin_dolphin
 kde.org/UserFeedback.org.kde.dolphin.conf
+mimeapps.list
+kdeglobals
+dolphinrc
+arkrc
+Code - OSS/
 Code - OSS/code.lock
 Code - OSS/Cookies
 Code - OSS/Cookies-journal
@@ -287,12 +292,14 @@ Code - OSS/User/History/-2a7df4d8/YJF3.json
 Code - OSS/User/History/-3ad8c937/3pAA.conf
 Code - OSS/User/History/-3ad8c937/3Xx5.conf
 Code - OSS/User/History/-3ad8c937/6Bwi.conf
+Code - OSS/User/History/-3ad8c937/6Hqc.conf
 Code - OSS/User/History/-3ad8c937/9QfI.conf
 Code - OSS/User/History/-3ad8c937/65Nb.conf
 Code - OSS/User/History/-3ad8c937/AAtT.conf
 Code - OSS/User/History/-3ad8c937/b1lk.conf
 Code - OSS/User/History/-3ad8c937/DFom.conf
 Code - OSS/User/History/-3ad8c937/entries.json
+Code - OSS/User/History/-3ad8c937/fXzA.conf
 Code - OSS/User/History/-3ad8c937/gf1N.conf
 Code - OSS/User/History/-3ad8c937/gZAx.conf
 Code - OSS/User/History/-3ad8c937/hdSs.conf
@@ -316,8 +323,12 @@ Code - OSS/User/History/-515dd62/entries.json
 Code - OSS/User/History/-515dd62/i0kE.json
 Code - OSS/User/History/-515dd62/rvdt.json
 Code - OSS/User/History/-515dd62/W0jA.json
+Code - OSS/User/History/-62053219/A9EX
+Code - OSS/User/History/-62053219/BXSZ
 Code - OSS/User/History/-62053219/diWd
+Code - OSS/User/History/-62053219/entries.json
 Code - OSS/User/History/-62053219/Qs62
+Code - OSS/User/History/-62053219/vdeY
 Code - OSS/User/History/-6a1fa52d/2AQG.sh
 Code - OSS/User/History/-6a1fa52d/2Tcx.sh
 Code - OSS/User/History/-6a1fa52d/8Yze.sh
@@ -379,6 +390,7 @@ Code - OSS/User/History/-7f5ab3f1/xSZi.json
 Code - OSS/User/History/-7ff48a60/c2AI.json
 Code - OSS/User/History/-7ff48a60/entries.json
 Code - OSS/User/History/-7ff48a60/joCJ.json
+Code - OSS/User/History/-7ff48a60/WtvT.json
 Code - OSS/User/History/-7ff48a60/xg3I.json
 Code - OSS/User/History/-9497a87/4WoA.ini
 Code - OSS/User/History/-9497a87/8xHz.ini
@@ -568,11 +580,5 @@ Code - OSS/logs/20241121T014503/window1/exthost/vscode.git/Git.log
 Code - OSS/logs/20241121T014503/window1/exthost/vscode.github/GitHub.log
 Code - OSS/logs/20241121T014503/window1/exthost/vscode.github-authentication/GitHub Authentication.log
 Code - OSS/logs/20241121T014503/window1/output_20241121T014507/tasks.log
-mimeapps.list
-kdeglobals
-dolphinrc
-arkrc
-Code - OSS/User/History/-3ad8c937/6Hqc.conf
-Code - OSS/User/History/-3ad8c937/fXzA.conf
-Code - OSS/User/History/-62053219/entries.json
-Code - OSS/User/History/-62053219/vdeY
+dconf/
+xfce4/
