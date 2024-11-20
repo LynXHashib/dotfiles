@@ -5,14 +5,15 @@
 @define-color workspacesbackground1 @color14;
 @define-color workspacesbackground2 @color14;
 @define-color bordercolor @color11;
-@define-color textcolor1 @color15;
+@define-color textcolor1 #ffffff;
 @define-color textcolor2 @color0;
 @define-color bordercolor @color14;
 @define-color iconcolor @color15;
 
 * {
   /* `otf-font-awesome` is required to be installed for icons */
-  font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+  font-family: 'Font Awesome 6 Free', FontAwesome, Roboto, Helvetica, Arial,
+    sans-serif;
   border: none;
   border-radius: 0px;
   min-height: 0;
@@ -243,33 +244,6 @@ window#waybar.empty #window {
   margin-right: 20px;
 }
 
-#custom-chatgpt {
-  margin-right: 12px;
-  background-image: url('../assets/openai.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  padding-right: 16px;
-  opacity: 0.8;
-}
-
-#custom-ml4w-welcome {
-  margin-right: 12px;
-  background-image: url('../assets/ml4w-icon.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  padding-right: 20px;
-}
-
-#custom-ml4w-hyprland-settings {
-  margin-right: 12px;
-  background-image: url('../assets/hyprland-icon.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  padding-right: 16px;
-  opacity: 0.8;
-}
 
 /* -----------------------------------------------------
 * Idle Inhibator
@@ -457,7 +431,7 @@ window#waybar.empty #window {
   font-size: 16px;
   color: @textcolor1;
   border-radius: 15px;
-  padding: 2px 14px 0px 8px;
+  padding: 2px 10px 0px 10px;
   margin: 5px 15px 5px 0px;
   opacity: 0.8;
   border: 2px solid @bordercolor;
@@ -467,8 +441,8 @@ window#waybar.empty #window {
   font-size: 16px;
   color: @textcolor1;
   border-radius: 15px;
-  padding-right: 16px;
-  /* margin: 5px 15px 5px 0px; */
+  /* padding-right: 16px; */
+  margin: 5px 15px 5px 0px;
   opacity: 0.8;
   border: 2px solid @bordercolor;
 }
@@ -476,32 +450,30 @@ window#waybar.empty #window {
 /* -----------------------------------------------------
 * Battery
 * ----------------------------------------------------- */
-
-#battery {
-  /* background-color: @backgroundlight; */
-  background: transparent;
-  font-size: 16px;
-  color: @textcolor1;
-  border-radius: 15px;
-  padding: 2px 15px 0px 10px;
-  margin: 5px 15px 5px 0px;
-  opacity: 0.8;
-  border: 2px solid @bordercolor;
-}
-
+/* 
 #battery.charging,
 #battery.plugged {
   color: @textcolor1;
-  /* background-color: @backgroundlight; */
+  background-color: @backgroundlight;
   background: transparent;
-}
-/* RIGHT SIDE */
+} */
+
+/* RIGHT SIDE BLUETOOTH APPMENU AUDIO WIFI CLOCK*/
+
 #battery,
 #pulseaudiO,
 #network,
 #bluetooth,
-#clock {
-  font-weight: bold;
+#clock,
+#custom-theme {
+  background: transparent;
+  font-size: 16px;
+  color: @textcolor1;
+  border-radius: 15px;
+  padding: 2px 15px 2px 10px;
+  margin: 5px 15px 5px 0px;
+  opacity: 0.8;
+  border: 2px solid @bordercolor;
 }
 /* AUDIO BLEUTOOTH NETWORK CLOCK HOVER */
 #battery:hover,
@@ -509,7 +481,8 @@ window#waybar.empty #window {
 #network:hover,
 #bluetooth:hover,
 #clock:hover,
-#custom-appmenuicon:hover {
+#custom-appmenuicon:hover,
+#custom-theme:hover {
   background: @backgroundlight;
   opacity: 1;
 }
@@ -567,4 +540,23 @@ window#waybar.empty #window {
   min-width: 10px;
   border-radius: 5px;
   background-color: red;
+}
+#pulseaudio-slider slider {
+  min-height: 0px;
+  min-width: 0px;
+  opacity: 0;
+  background-image: none;
+  border: none;
+  box-shadow: none;
+}
+#pulseaudio-slider trough {
+  min-height: 10px;
+  min-width: 80px;
+  border-radius: 5px;
+  background-color: black;
+}
+#pulseaudio-slider highlight {
+  min-width: 10px;
+  border-radius: 5px;
+  background-color: green;
 }

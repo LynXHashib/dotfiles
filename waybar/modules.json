@@ -226,11 +226,11 @@
 
   // Clock
   "clock": {
-    "format": "{:%I:%M %p %a}",
+    "format": "{:%I  %M %p %a}",
     "timezone": "Asia/Dhaka",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
     // START CLOCK FORMAT
-    "format-alt": "{:%Y-%m-%d}"
+    "format-alt": "{:%d-%m-%Y}"
     // END CLOCK FORMAT
   },
 
@@ -296,33 +296,33 @@
     "orientation": "horizontal",
     "modules": ["custom/chatgpt", "custom/empty"]
   },
-
-  // Group Settings
-  "group/settings": {
-    "orientation": "inherit",
-    "drawer": {
-      "transition-duration": 300,
-      "children-class": "not-memory",
-      "transition-left-to-right": true
-    },
-    "modules": [
-      "custom/settings",
-      "custom/waybarthemes",
-      "custom/wallpaper",
-      "custom/ml4w-hyprland-settings"
-    ]
-  },
   // BACKLIGHT
   "backlight": {
-    "device": "HDMI-A-1",
-    "format": "{percent}% {icon}",
-    "format-icons": ["", "", "", "", "", "", "", "", ""]
+    "format": "{icon} {percent}%",
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "scroll-step": 1
   },
 
   // Network
   "network": {
     "format": "{ifname}",
-    "format-wifi": "   {signalStrength}%",
+    "format-wifi": " {signalStrength}%",
     "format-ethernet": "  {ifname}",
     "format-disconnected": "Disconnected",
     "tooltip-format": " {ifname} via {gwaddri}",
@@ -375,7 +375,7 @@
   // Pulseaudio
   "pulseaudio": {
     // "scroll-step": 1, // %, can be a float
-    "format": "{icon}   {volume}%",
+    "format": "{icon}{volume}%",
     "format-bluetooth": "{volume}%  {icon} {format_source}",
     "format-bluetooth-muted": " {icon} {format_source}",
     "format-muted": " {format_source}",
@@ -390,9 +390,15 @@
       "car": " ",
       "default": [" ", " ", " "]
     },
+
     "on-click": "pavucontrol &"
   },
 
+  // "pulseaudio/slider": {
+  //   "min": 0,
+  //   "max": 100,
+  //   "orientation": "horizontal"
+  // },
   // Bluetooth
   "bluetooth": {
     "format": " ",
@@ -403,7 +409,11 @@
     "on-click": "~/.config/hypr/scripts/bluetooth.sh",
     "format-no-controller": ""
   },
-
+  // DARK/LIGHT MODE TOGGLE
+  "custom/theme": {
+    "format": "",
+    "on-click": "~/.config/waybar/scripts/thememodechange.sh"
+  },
   // Other
   "user": {
     "format": "{user}",
