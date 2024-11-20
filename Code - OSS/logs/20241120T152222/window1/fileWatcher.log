@@ -1,5 +1,0 @@
-2024-11-20 15:41:38.179 [warning] [File Watcher] Watcher shutdown because watched path got deleted (path: /home/hashib/.config/ags/modules)
-2024-11-20 15:41:38.180 [error] [File Watcher (node.js)] Failed to watch /home/hashib/.config/ags/modules/.miscutils/system.js for changes using fs.watch() (Error: ENOENT: no such file or directory, watch '/home/hashib/.config/ags/modules/.miscutils/system.js')
-2024-11-20 15:41:38.189 [warning] [File Watcher (node.js)] Watcher shutdown because watched path got deleted
-2024-11-20 15:41:38.192 [warning] [File Watcher (node.js)] Watcher shutdown because watched path got deleted
-2024-11-20 15:41:38.977 [error] [File Watcher (node.js)] Failed to watch /home/hashib/.config/ags/modules/.miscutils/system.js for changes using fs.watch() (Error: ENOENT: no such file or directory, watch '/home/hashib/.config/ags/modules/.miscutils/system.js')
