@@ -1,0 +1,13 @@
+2024-11-20 15:22:24.687 [info] Started local extension host with pid 156525.
+2024-11-20 15:22:27.642 [info] [perf] Render performance baseline is 113ms
+2024-11-20 15:23:09.697 [info] Started local extension host with pid 156631.
+2024-11-20 15:23:12.556 [info] [perf] Render performance baseline is 65ms
+2024-11-20 15:41:38.176 [warning] [File Watcher] Watcher shutdown because watched path got deleted (path: /home/hashib/.config/ags/modules)
+2024-11-20 15:41:38.177 [error] [File Watcher (node.js)] Failed to watch /home/hashib/.config/ags/modules/.miscutils/system.js for changes using fs.watch() (Error: ENOENT: no such file or directory, watch '/home/hashib/.config/ags/modules/.miscutils/system.js')
+2024-11-20 15:41:38.189 [warning] [File Watcher (node.js)] Watcher shutdown because watched path got deleted
+2024-11-20 15:41:38.192 [warning] [File Watcher (node.js)] Watcher shutdown because watched path got deleted
+2024-11-20 15:41:38.979 [error] [File Watcher (node.js)] Failed to watch /home/hashib/.config/ags/modules/.miscutils/system.js for changes using fs.watch() (Error: ENOENT: no such file or directory, watch '/home/hashib/.config/ags/modules/.miscutils/system.js')
+2024-11-20 16:45:37.483 [warning] Creation of workbench contribution 'workbench.contrib.preferencesActions' took 52ms.
+2024-11-20 16:45:37.553 [warning] Creation of workbench contribution 'workbench.contrib.explorerViewletViews' took 25ms.
+2024-11-20 16:45:40.023 [info] Started local extension host with pid 160512.
+2024-11-20 16:45:53.017 [info] [perf] Render performance baseline is 291ms

@@ -1,0 +1,101 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 5px;
+}
+.mainContents {
+  display: flex;
+  justify-content: space-between; /* Adjusts space between the two lists */
+  width: 100%; /* Ensures it takes full width */
+  text-align: center;
+}
+
+.clientList {
+  flex: 1; /* Allows clientList to take up available space */
+  padding-right: 20px; /* Optional: adds space between the lists */
+}
+
+.messageList {
+  flex: 4; /* Allows messageList to take more space */
+}
+
+.hiddenAlways {
+  display: none;
+}
+/*//////////////////////////////////////////////////////////////////////////////////////*/
+
+/* ///////////////////////// TEMPLATES HERE ////////////////////////*/
+
+/* ////////////////////// MESSAGE_TEMPLATE ////////////////////////////*/
+.messageTemplate {
+  background: linear-gradient(45deg, rgb(53, 53, 54), rgb(20, 20, 20));
+  color: #93b7b8;
+  margin: 0px;
+  min-height: 100%;
+}
+.mainPanel {
+  color: aliceblue;
+  display: flex;
+  padding: 20px 5px;
+  justify-content: center;
+  width: 100%;
+  font-weight: bold;
+  /* background-image: url(./images/forTemplate/vlcsnap-2024-10-22-18h08m38s346.png); */
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  background-size: cover; /* Cover the entire area */
+  opacity: 1;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  /* box-shadow: 0 0px 20px 0 rgba(255, 254, 254, 0.37); */
+}
+
+.panelLeft {
+  flex: 80%;
+}
+
+.panelRight {
+  flex: auto;
+  filter: none;
+}
+
+.btnMenu {
+  border: 2px solid lightslategray;
+  background-color: lightslategray;
+  border-radius: 90px;
+  text-align: center;
+  color: aliceblue;
+  padding: 5px 20px;
+  z-index: 1;
+  width: auto;
+  filter: none;
+  backdrop-filter: blur(8px);
+  width: 20%;
+  cursor: pointer;
+}
+.btnMenu:hover {
+  background-color: #93b7b8;
+  box-shadow: #07093b 5px;
+}
+.messageContainer {
+  margin: 40px 30px;
+  width: 50%;
+  padding: 20px;
+}
+.messageContent {
+  color: white;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(127, 126, 126, 0.37);
+}
