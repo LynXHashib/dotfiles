@@ -12,3 +12,9 @@ user-dirs.locale
 gtk-3.0/
 xsettingsd/
 Thunar/
+user-dirs.dirs
+go/
+qBittorrent/
+font-manager/
+fontconfig/
+QtProject.conf

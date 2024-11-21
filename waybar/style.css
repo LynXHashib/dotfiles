@@ -276,8 +276,18 @@ window#waybar.empty #window {
   font-size: 16px;
   color: @textcolor3;
   border-radius: 15px;
-  padding: 0px 15px 0px 10px;
-  margin: 3px 15px 3px 14px;
+  padding: 0px 10px 0px 10px;
+  margin: 3px 4px 3px 14px;
+  opacity: 0.8;
+  border: 3px solid @bordercolor;
+}
+#custom-wallpaper{
+  background-color: transparent;
+  font-size: 16px;
+  color: @textcolor3;
+  border-radius: 15px;
+  padding: 0px 10px 0px 10px;
+  margin: 3px 8px 3px 4px;
   opacity: 0.8;
   border: 3px solid @bordercolor;
 }
@@ -464,8 +474,7 @@ window#waybar.empty #window {
 #pulseaudiO,
 #network,
 #bluetooth,
-#clock,
-#custom-theme {
+#clock{
   background: transparent;
   font-size: 16px;
   color: @textcolor1;
@@ -482,7 +491,7 @@ window#waybar.empty #window {
 #bluetooth:hover,
 #clock:hover,
 #custom-appmenuicon:hover,
-#custom-theme:hover {
+#custom-wallpaper:hover {
   background: @backgroundlight;
   opacity: 1;
 }

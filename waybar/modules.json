@@ -13,7 +13,7 @@
       "default": ""
     },
     "persistent-workspaces": {
-      "*": 3
+      "*": 2
     }
   },
 
@@ -413,6 +413,12 @@
   "custom/theme": {
     "format": "",
     "on-click": "~/.config/waybar/scripts/thememodechange.sh"
+  },
+  // WAYPAPER ///
+  "custom/wallpaper": {
+    "format": "",
+    "on-click": "waypaper",
+    "tooltip-format": "Left: Select a wallpaper\nRight: Select wallpaper effect"
   },
   // Other
   "user": {

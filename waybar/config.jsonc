@@ -11,7 +11,7 @@
   "include": ["~/.config/waybar/modules.json"],
 
   // Choose the order of the modules
-  "modules-left": ["custom/appmenuicon", "wlr/taskbar"],
+  "modules-left": ["custom/appmenuicon", "custom/wallpaper","wlr/taskbar"],
   "modules-center": ["hyprland/workspaces"],
   "modules-right": [
     // "pulseaudio/slider",
