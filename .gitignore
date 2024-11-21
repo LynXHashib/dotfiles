@@ -9,3 +9,6 @@ Code - OSS/
 dconf/
 xfce4/
 user-dirs.locale
+gtk-3.0/
+xsettingsd/
+Thunar/
