@@ -52,4 +52,4 @@ powermanagementprofilesrc
 gtk-4.0/
 Trolltech.conf
 QtProject.conf
-QtProject.conf
+.gitignore
