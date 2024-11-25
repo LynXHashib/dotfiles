@@ -226,7 +226,7 @@
 
   // Clock
   "clock": {
-    "format": "{:%I  %M %p %a}",
+    "format": "{:%I  %M %p}",
     "timezone": "Asia/Dhaka",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
     // START CLOCK FORMAT
