@@ -53,3 +53,15 @@ gtk-4.0/
 Trolltech.conf
 QtProject.conf
 .gitignore
+hyprpanel/
+zed/
+/GitHub Desktop
+trashrc
+systemsettingsrc
+plasmarc
+kwinoutputconfig.json
+kwalletrc
+krdpserverrc
+/github-copilot
+drkonqirc
+discoverrc

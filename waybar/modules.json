@@ -405,6 +405,7 @@
     "tooltip-format": "{status}",
     "format-disabled": "",
     "format-off": " ",
+    "format-connected": "  ",
     "interval": 30,
     "on-click": "~/.config/hypr/scripts/bluetooth.sh",
     "format-no-controller": ""

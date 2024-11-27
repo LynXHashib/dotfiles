@@ -1,13 +1,13 @@
 @import '../../.cache/wal/colors-waybar.css';
 
-@define-color backgroundlight @color3;
+@define-color backgroundlight @color6;
 @define-color backgrounddark @color5;
 @define-color workspacesbackground1 @color14;
 @define-color workspacesbackground2 @color14;
 @define-color bordercolor @color11;
 @define-color textcolor1 #ffffff;
 @define-color textcolor2 @color0;
-@define-color bordercolor @color14;
+@define-color bordercolor @color13;
 @define-color iconcolor @color15;
 
 * {
