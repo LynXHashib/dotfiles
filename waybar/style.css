@@ -1,22 +1,23 @@
-@import '../../.cache/wal/colors-waybar.css';
+@import "../../.cache/hellwal/colors-waybar.css";
 
-@define-color backgroundlight @color6;
+@define-color backgroundlight @color10;
+@define-color backgroundcolor transparent;
 @define-color backgrounddark @color5;
 @define-color workspacesbackground1 @color14;
 @define-color workspacesbackground2 @color14;
-@define-color bordercolor @color11;
-@define-color textcolor1 #ffffff;
+@define-color bordercolor @color14;
+@define-color textcolor1 @color15;
 @define-color textcolor2 @color0;
-@define-color bordercolor @color13;
 @define-color iconcolor @color15;
 
 * {
   /* `otf-font-awesome` is required to be installed for icons */
-  font-family: 'Font Awesome 6 Free', FontAwesome, Roboto, Helvetica, Arial,
+  font-family: "Font Awesome 6 Free", FontAwesome, Roboto, Helvetica, Arial,
     sans-serif;
   border: none;
   border-radius: 0px;
   min-height: 0;
+  /* margin: 4px; */
   /* font-size: 1px; */
 }
 
@@ -30,7 +31,7 @@ window#waybar {
 }
 
 /* -----------------------------------------------------
-* Workspaces 
+* Workspaces
 * ----------------------------------------------------- */
 
 #workspaces {
@@ -79,15 +80,17 @@ window#waybar {
 
 tooltip {
   border-radius: 15px;
-  /* font-family: Arial, Helvetica, sans-serif; */
-  background: @workspacesbackground2;
+  letter-spacing: 2px;
+  font-family: Arial, Helvetica, sans-serif;
+
+  background: @bordercolor;
   opacity: 0.8;
   padding: 20px;
   margin: 0px;
 }
 
 tooltip label {
-  color: #363131;
+  color: @textcolor;
 }
 
 /* -----------------------------------------------------
@@ -95,7 +98,7 @@ tooltip label {
 * ----------------------------------------------------- */
 
 #window {
-  background: transparent;
+  background: @backgroundcolor;
   margin: 5px 15px 5px 0px;
   padding: 2px 10px 0px 10px;
   border-radius: 12px;
@@ -107,50 +110,53 @@ tooltip label {
 }
 
 window#waybar.empty #window {
-  background-color: transparent;
-  border: 0px transparent;
+  background-color: @backgroundcolor;
+  border: 0px @backgroundcolor;
 }
 /*------------------------------------------------------
 * MEDIA PLAYER
 * ---------------------------------------------------*/
 #custom-mediaplayer {
-  background-color: #66cc99;
-  color: #2a5c45;
-  min-width: 100px;
-  padding: 0 10px;
-  color: #ffffff;
+  background-color: @backgroundcolor;
+  /* background-image: url("/tmp/waybar-mediaplayer-art"); */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  color: @textcolor3;
+  border-radius: 15px;
+  padding: 0px 10px 0px 10px;
+  margin: 3px 4px 3px 14px;
+  opacity: 0.8;
+  border: 3px solid @bordercolor;
 }
-
-#custom-mediaplayer.custom-spotify {
-  background-color: #66cc99;
-}
-
-#custom-mediaplayer.custom-vlc {
-  background-color: #ffa000;
-}
-@import './scripts/media.css';
+@import "./waybar-mediaplayer/src/style-catppuccin.css";
 /* -----------------------------------------------------
 * Taskbar
 * ----------------------------------------------------- */
 #taskbar {
-  background: transparent;
-  margin: 3px 15px 3px 0px;
-  padding: 0px;
+  background: rgba(255, 247, 247, 0.4);
+  margin: 3px 1px 3px 0px;
+  /* padding: 0px; */
   border-radius: 15px;
   font-weight: normal;
   font-style: normal;
   opacity: 0.8;
-  border: 3px solid @bordercolor;
+  /* border: 3px solid @bordercolor; */
 }
-
+#taskbar button:hover {
+  background-color: @backgroundlight;
+  /* opacity: 0.6; */
+  /* margin: 3px 5px 3px 5px; */
+  /* transition: 1s;/ */
+}
 #taskbar button {
-  margin: 0;
+  margin: 3px 1px 3px 0px;
   border-radius: 15px;
   padding: 0px 5px 0px 5px;
 }
 
 #taskbar.empty {
-  background: transparent;
+  background: @backgroundcolor;
   border: 0;
   padding: 0;
   margin: 0;
@@ -244,7 +250,6 @@ window#waybar.empty #window {
   margin-right: 20px;
 }
 
-
 /* -----------------------------------------------------
 * Idle Inhibator
 * ----------------------------------------------------- */
@@ -272,7 +277,7 @@ window#waybar.empty #window {
 #custom-appmenu,
 #custom-appmenuwlr,
 #custom-appmenuicon {
-  background-color: transparent;
+  background-color: @backgroundcolor;
   font-size: 16px;
   color: @textcolor3;
   border-radius: 15px;
@@ -281,8 +286,8 @@ window#waybar.empty #window {
   opacity: 0.8;
   border: 3px solid @bordercolor;
 }
-#custom-wallpaper{
-  background-color: transparent;
+#custom-wallpaper {
+  background-color: @backgroundcolor;
   font-size: 16px;
   color: @textcolor3;
   border-radius: 15px;
@@ -304,49 +309,6 @@ window#waybar.empty #window {
   color: @iconcolor;
   opacity: 0.8;
 }
-
-/* -----------------------------------------------------
-* Custom Updates
-* ----------------------------------------------------- */
-
-#custom-updates {
-  background-color: @backgroundlight;
-  font-size: 16px;
-  color: @textcolor1;
-  border-radius: 15px;
-  padding: 2px 10px 0px 10px;
-  margin: 5px 15px 5px 0px;
-  opacity: 0.8;
-}
-
-#custom-updates.green {
-  background-color: @backgroundlight;
-}
-
-#custom-updates.yellow {
-  background-color: #ff9a3c;
-  color: #ffffff;
-}
-
-#custom-updates.red {
-  background-color: #dc2f2f;
-  color: #ffffff;
-}
-
-/* -----------------------------------------------------
-* Custom Youtube
-* ----------------------------------------------------- */
-
-#custom-youtube {
-  background-color: @backgroundlight;
-  font-size: 16px;
-  color: @textcolor1;
-  border-radius: 15px;
-  padding: 2px 10px 0px 10px;
-  margin: 5px 15px 5px 0px;
-  opacity: 0.8;
-}
-
 /* -----------------------------------------------------
 * Hardware Group
 * ----------------------------------------------------- */
@@ -366,28 +328,12 @@ window#waybar.empty #window {
 }
 
 /* -----------------------------------------------------
-* Clock
-* ----------------------------------------------------- */
-
-#clock {
-  /* background-color: @backgroundlight; */
-  background: transparent;
-  font-size: 16px;
-  color: @textcolor1;
-  border-radius: 15px;
-  padding: 1px 10px 0px 10px;
-  margin: 3px 15px 3px 0px;
-  opacity: 0.8;
-  border: 2px solid @bordercolor;
-}
-
-/* -----------------------------------------------------
 * Pulseaudio
 * ----------------------------------------------------- */
 
 #pulseaudio {
   /* background-color: @backgroundlight; */
-  background: transparent;
+  background: @backgroundcolor;
   font-size: 16px;
   color: @textcolor1;
   border-radius: 15px;
@@ -409,7 +355,7 @@ window#waybar.empty #window {
 #network {
   /* background-color: @backgroundlight; */
   font-size: 16px;
-  background: transparent;
+  background: @backgroundcolor;
   color: @textcolor1;
   border-radius: 15px;
   padding: 2px 10px 0px 10px;
@@ -426,7 +372,7 @@ window#waybar.empty #window {
 #network.wifi {
   /* background-color: @backgroundlight; */
   color: @textcolor1;
-  background: transparent;
+  background: @backgroundcolor;
 }
 
 /* -----------------------------------------------------
@@ -437,7 +383,7 @@ window#waybar.empty #window {
 #bluetooth.on,
 #bluetooth.connected {
   /* background-color: @backgroundlight; */
-  background: transparent;
+  background: @backgroundcolor;
   font-size: 16px;
   color: @textcolor1;
   border-radius: 15px;
@@ -447,7 +393,7 @@ window#waybar.empty #window {
   border: 2px solid @bordercolor;
 }
 #bluetooth.off {
-  background: transparent;
+  background: @backgroundcolor;
   font-size: 16px;
   color: @textcolor1;
   border-radius: 15px;
@@ -460,12 +406,12 @@ window#waybar.empty #window {
 /* -----------------------------------------------------
 * Battery
 * ----------------------------------------------------- */
-/* 
+/*
 #battery.charging,
 #battery.plugged {
   color: @textcolor1;
   background-color: @backgroundlight;
-  background: transparent;
+  background: @backgroundcolor;
 } */
 
 /* RIGHT SIDE BLUETOOTH APPMENU AUDIO WIFI CLOCK*/
@@ -474,8 +420,8 @@ window#waybar.empty #window {
 #pulseaudiO,
 #network,
 #bluetooth,
-#clock{
-  background: transparent;
+#clock {
+  background: @backgroundcolor;
   font-size: 16px;
   color: @textcolor1;
   border-radius: 15px;
@@ -483,6 +429,7 @@ window#waybar.empty #window {
   margin: 5px 15px 5px 0px;
   opacity: 0.8;
   border: 2px solid @bordercolor;
+  /* height: 26px; */
 }
 /* AUDIO BLEUTOOTH NETWORK CLOCK HOVER */
 #battery:hover,
@@ -538,13 +485,6 @@ window#waybar.empty #window {
   box-shadow: none;
 }
 
-#backlight-slider trough {
-  min-height: 80px;
-  min-width: 10px;
-  border-radius: 5px;
-  background-color: black;
-}
-
 #backlight-slider highlight {
   min-width: 10px;
   border-radius: 5px;
@@ -557,12 +497,6 @@ window#waybar.empty #window {
   background-image: none;
   border: none;
   box-shadow: none;
-}
-#pulseaudio-slider trough {
-  min-height: 10px;
-  min-width: 80px;
-  border-radius: 5px;
-  background-color: black;
 }
 #pulseaudio-slider highlight {
   min-width: 10px;

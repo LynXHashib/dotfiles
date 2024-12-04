@@ -52,7 +52,6 @@ powermanagementprofilesrc
 gtk-4.0/
 Trolltech.conf
 QtProject.conf
-.gitignore
 hyprpanel/
 zed/
 /GitHub Desktop
@@ -65,3 +64,30 @@ krdpserverrc
 /github-copilot
 drkonqirc
 discoverrc
+/blender 
+/codeblocks 
+/discord 
+/ghb 
+/kate 
+/Minecraft Linux Launcher
+/Postman
+/pulse
+/systemd
+/simple-update-notifier
+/unity3d
+/VirtualBox
+baloofileinformationrc
+katerc
+konsolesshconfig
+systemmonitorrc
+kwriterc
+plasmanotifyrc
+.gitignore
+kscreenlockerrc
+kiorc
+ksplashrc
+xdg-desktop-portal-kderc
+konsolerc
+kded6rc
+katevirc
+sddmthemeinstallerrc

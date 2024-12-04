@@ -4,17 +4,24 @@
   "margin-top": 10,
   "margin-bottom": 0,
   "position": "top", // Waybar position (top|bottom|left|right)
-  // "height": 16, // Waybar height (to be removed for auto height)
+  "height": 14, // Waybar height (to be removed for auto height)
   // "width": 1280, // Waybar width
   "spacing": 3, // Gaps between modules (4px)
 
   "include": ["~/.config/waybar/modules.json"],
 
   // Choose the order of the modules
-  "modules-left": ["custom/appmenuicon", "custom/wallpaper","wlr/taskbar"],
+  "modules-left": [
+    "custom/appmenuicon",
+    "custom/wallpaper",
+    "wlr/taskbar",
+    "image",
+    "custom/mediaplayer"
+  ],
   "modules-center": ["hyprland/workspaces"],
   "modules-right": [
     // "pulseaudio/slider",
+    "cava",
     "pulseaudio",
     "bluetooth",
     "battery",

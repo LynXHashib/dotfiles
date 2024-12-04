@@ -11,5 +11,6 @@ wallpaper=$(eval echo "$wallpaper")
 echo "Setting wallpaper to $wallpaper"
 killall waybar
 wal --backend colorz -i $wallpaper --cols16 
+hellwal -i $wallpaper
 waybar
 gi

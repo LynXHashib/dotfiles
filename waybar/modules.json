@@ -52,26 +52,39 @@
     "signal": 4,
     "on-click": "feh --auto-zoom --borderless --title 'feh-float' /tmp/waybar-mediaplayer-art"
   },
-  // MEDIA PLAYER
+  // MEDIAPLAYER //
   "custom/mediaplayer": {
-    "format": "{icon} {text}",
+    "exec": "$HOME/.config/waybar/waybar-mediaplayer/src/mediaplayer monitor",
     "return-type": "json",
-    "max-length": 40,
-    "format-icons": {
-      "spotify": "",
-      "default": "🎜"
-    },
-    "escape": true,
-    // "exec": "$HOME/.config/waybar/scripts/mediaplayer.py 2> /dev/null" // Script in resources folder
-    "exec": "$HOME/.config/waybar/mediaplayer.py --player firefox.instance_1_36 2> /dev/null" // Filter player based on name
+    "format": "{}",
+    "on-click": "$HOME/.config/waybar/waybar-mediaplayer/src/mediaplayer play-pause",
+    "on-scroll-up": "$HOME/.config/waybar/waybar-mediaplayer/src/mediaplayer next",
+    "on-scroll-down": "$HOME/.config/waybar/waybar-mediaplayer/src/mediaplayer previous",
+    "min-length": 20,
+    "max-length": 20
   },
 
-  // ML4W Welcome App
-  "custom/ml4w-welcome": {
-    "on-click": "sleep 0.1 && ~/dotfiles/eww/ml4w-sidebar/launch.sh",
-    "on-click-right": "sleep 0.1 && ~/dotfiles/apps/ML4W_Welcome-x86_64.AppImage",
-    "format": " ",
-    "tooltip-format": "Open Sidebar"
+  "cava": {
+    //        "cava_config": "$XDG_CONFIG_HOME/cava/cava.conf",
+    "framerate": 30,
+    "autosens": 1,
+    "sensitivity": 100,
+    "bars": 14,
+    "lower_cutoff_freq": 50,
+    "higher_cutoff_freq": 10000,
+    "method": "pulse",
+    "source": "auto",
+    "stereo": true,
+    "reverse": false,
+    "bar_delimiter": 0,
+    "monstercat": false,
+    "waves": false,
+    "noise_reduction": 0.77,
+    "input_delay": 2,
+    "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
+    "actions": {
+      "on-click-right": "mode"
+    }
   },
 
   // ML4W Hyprland Settings App
@@ -167,7 +180,7 @@
     // START APPS LABEL
     "format": "Apps",
     // END APPS LABEL
-    "on-click": "sleep 0.2;wofi --show drun -replace",
+    "on-click": "sleep 0.2;rofi -show drun -replace",
     // "on-click-right": "~/dotfiles/hypr/scripts/keybindings.sh",
     "tooltip-format": "Left: Open the application launcher\nRight: Show all keybindings"
   },
@@ -175,7 +188,7 @@
   // Wofi Application Launcher
   "custom/appmenuicon": {
     "format": "",
-    "on-click": "wofi --show drun -replace",
+    "on-click": "rofi -show drun -replace",
     "on-click-right": "~/dotfiles/hypr/scripts/keybindings.sh",
     "tooltip-format": "Left: Open the application launcher\nRight: Show all keybindings"
   },
@@ -186,25 +199,6 @@
     "format": "⏻ ",
     "tooltip-format": "Power Menu",
     "on-click": "wlogout"
-  },
-  // Hyprshade
-  "custom/hyprshade": {
-    "format": "",
-    "tooltip-format": "Toggle Screen Shader",
-    "on-click": "sleep 0.5; ~/dotfiles/hypr/scripts/hyprshade.sh",
-    "on-click-right": "sleep 0.5; ~/dotfiles/hypr/scripts/hyprshade.sh rofi"
-  },
-
-  // Hypridle inhibitor
-  "custom/hypridle": {
-    "format": "",
-    "return-type": "json",
-    "escape": true,
-    "exec-on-event": true,
-    "interval": 60,
-    "exec": "~/dotfiles/hypr/scripts/hypridle.sh status",
-    "on-click": "~/dotfiles/hypr/scripts/hypridle.sh toggle",
-    "on-click-right": "hyprlock"
   },
 
   // Keyboard State
