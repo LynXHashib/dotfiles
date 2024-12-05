@@ -1,0 +1,10 @@
+* {
+    main-bg:            #%%color14%%;
+    main-fg:            #000000;
+    main-br:            #%%color1%%;
+    main-ex:            #%%color5%%;
+    select-bg:          #%%color15%%;
+    select-fg:          #000000;
+    separatorcolor:     transparent;
+    border-color:       transparent;
+}

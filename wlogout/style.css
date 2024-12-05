@@ -1,29 +1,28 @@
-@import '../../.cache/wal/colors-waybar.css';
+@import "../../.cache/hellwal/colors-waybar.css";
 
-@define-color backgroundlight @color5;
-@define-color backgrounddark @color11;
-@define-color workspacesbackground1 @color5;
-@define-color workspacesbackground2 @color11;
-@define-color bordercolor @color11;
-@define-color textcolor1 #000000;
-@define-color textcolor2 #000000;
-@define-color textcolor3 #ffffff;
-@define-color bordercolorlight #ffffff;
-@define-color bordercolordark #000000;
-@define-color iconcolor #000000;
+@define-color backgroundlight @color10;
+@define-color backgroundcolor transparent;
+@define-color backgrounddark @color5;
+@define-color workspacesbackground1 @color14;
+@define-color workspacesbackground2 @color14;
+@define-color bordercolor @color14;
+@define-color textcolor1 @color15;
+@define-color textcolor2 @color0;
+@define-color iconcolor @color15;
 
 * {
   font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
   background-image: none;
   transition: 20ms;
   box-shadow: none;
+  font-weight: bold;
 }
 
 window {
-  background: url('../../.cache/blurred_wallpaper.png');
+  background: transparent;
   background-size: cover;
 }
-
+/* 
 button {
   color: #ffffff;
   font-size: 20px;
@@ -43,10 +42,45 @@ button:focus,
 button:active,
 button:hover {
   color: @color11;
-  background-color: rgba(12, 12, 12, 0.5);
+  background-color: rgba(0, 255, 255, 0.5);
   border: 3px solid @color11;
+   
+}
+  */
+button {
+  color: @textcolor1;
+  background-color: @workspacesbackground2;
+  outline-style: none;
+  border: none;
+  border-width: 0px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20%;
+  border-radius: 0px;
+  box-shadow: none;
+  text-shadow: none;
+  animation: gradient_f 20s ease-in infinite;
+  transition: all 0.3s cubic-bezier(0.55, 0, 0.28, 1.682);
+  border: solid 3px #ffffff;
+  opacity: 0.6;
 }
 
+button:focus {
+  background-color: rgba(0, 255, 255, 0.6);
+  background-size: 30%;
+  transition: all 0.3s cubic-bezier(0.55, 0, 0.28, 1.682);
+  opacity: 1;
+}
+
+button:hover {
+  background-color: rgba(0, 255, 255, 0.6);
+  background-size: 40%;
+  border-radius: 5px;
+  animation: gradient_f 20s ease-in infinite;
+  transition: all 0.3s cubic-bezier(0.55, 0, 0.28, 1.682);
+  /* padding: 10px; */
+  opacity: 1;
+}
 /* 
 ----------------------------------------------------- 
 Buttons
@@ -56,35 +90,46 @@ Buttons
 #lock {
   margin: 10px;
   border-radius: 20px;
-  background-image: image(url('icons/lock.png'));
+  background-image: image(url("icons/lock.png"));
 }
 
 #logout {
   margin: 10px;
   border-radius: 20px;
-  background-image: image(url('icons/logout.png'));
+  background-image: image(url("icons/logout.png"));
 }
 
 #suspend {
   margin: 10px;
   border-radius: 20px;
-  background-image: image(url('icons/suspend.png'));
+  background-image: image(url("icons/suspend.png"));
 }
 
 #hibernate {
   margin: 10px;
   border-radius: 20px;
-  background-image: image(url('icons/hibernate.png'));
+  background-image: image(url("icons/hibernate.png"));
 }
 
 #shutdown {
   margin: 10px;
   border-radius: 20px;
-  background-image: image(url('icons/shutdown.png'));
+  background-image: image(url("icons/shutdown.png"));
 }
 
 #reboot {
   margin: 10px;
   border-radius: 20px;
-  background-image: image(url('icons/reboot.png'));
+  background-image: image(url("icons/reboot.png"));
 }
+/* #lock:hover,
+#logout:hover,
+#shutdown:hover,
+#reboot:hover,
+#suspend:hover,
+#hibernate:hover {
+  color: @color11;
+  background-color: rgba(0, 255, 255, 0.5);
+  border: 3px solid @color11;
+  background-size: 30%;
+} */
