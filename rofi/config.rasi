@@ -10,7 +10,7 @@ configuration {
     window-format:               "{w}{t}";
     font:                        "JetBrainsMono Nerd Font 10";
     icon-theme:                  "Tela-circle-dracula";
-    border-radius:                29px;
+    border-radius:                29em;
 }
 
 @theme "~/.cache/hellwal/colors-rofi.rasi"
@@ -19,15 +19,16 @@ configuration {
 // Main //
 window {
     height:                      30em;
-    width:                       48em;
+    width:                       36em;
     transparency:                "real";
     fullscreen:                  false;
     enabled:                     true;
     cursor:                      "default";
     spacing:                     0em;
     padding:                     0em;
-    border-color:                @main-br;
-    background-color:            @main-bg;
+    border-radius:               4em;
+    border-color:                @color14;
+    background-color:            @color7;
 }
 mainbox {
     enabled:                     true;
@@ -36,7 +37,7 @@ mainbox {
     orientation:                 vertical;
     children:                    [ "inputbar" , "listbox" ];
     background-color:            transparent;
-    background-image:            url("~/wallpaper/inactive/ipad-abstract-5k-m2.jpg", height);
+    background-image:            @wallpaper;
 }
 
 
@@ -47,25 +48,25 @@ inputbar {
     padding:                     5em;
     children:                    [ "entry" ];
     background-color:            transparent;
-   // background-image:            url("~/wallpaper/goatshit4.jpg", width);//
+   background-image:             @wallpaper;
 }
 entry {
     border-radius:               2em;
     enabled:                     true;
     spacing:                     1em;
-    padding:                     1em;
-    text-color:                  @main-fg;
-    background-color:            @main-bg;
+    padding:                     10px;
+    text-color:                  @color1;
+    background-color:            @color7;
 }
 
 
-// Lists //
+// Lists  The buttons on Right Side//
 listbox {
     padding:                     0em;
     spacing:                     0em;
     orientation:                 horizontal;
     children:                    [ "listview" , "mode-switcher" ];
-    background-color:            @main-bg;
+    background-color:            @color14;
 }
 listview {
     padding:                     1.5em;
@@ -82,7 +83,7 @@ listview {
     fixed-columns:               true;
     cursor:                      "default";
     background-color:            transparent;
-    text-color:                  @main-fg;
+    text-color:                  @color7;
 }
 
 
@@ -97,13 +98,13 @@ mode-switcher {
 }
 button {
     cursor:                      pointer;
-    border-radius:               2em;
-    background-color:            @main-bg;
-    text-color:                  @main-fg;
+    border-radius:               4em;
+    background-color:            @color7;
+    text-color:                  @color1;
 }
 button selected {
-    background-color:            @main-fg;
-    text-color:                  @main-bg;
+    background-color:            @color1;
+    text-color:                  @color7;
 }
 
 
@@ -114,11 +115,12 @@ element {
     padding:                     0.5em;
     cursor:                      pointer;
     background-color:            transparent;
-    text-color:                  @main-fg;
+    text-color:                  @color1;
+    border-radius:              4em;
 }
 element selected.normal {
-    background-color:            @select-bg;
-    text-color:                  @select-fg;
+    background-color:            @color1;
+    text-color:                  #ffffff;
 }
 element-icon {
     size:                        3em;
@@ -136,8 +138,8 @@ element-text {
 
 // Error message //
 error-message {
-    text-color:                  @main-fg;
-    background-color:            @main-bg;
+    text-color:                  @color1;
+    background-color:            @color7;
     text-transform:              capitalize;
     children:                    [ "textbox" ];
 }

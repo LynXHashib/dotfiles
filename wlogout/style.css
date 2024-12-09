@@ -66,15 +66,15 @@ button {
 }
 
 button:focus {
-  background-color: rgba(0, 255, 255, 0.6);
+  background-color: @color1;
   background-size: 30%;
   transition: all 0.3s cubic-bezier(0.55, 0, 0.28, 1.682);
   opacity: 1;
 }
 
 button:hover {
-  background-color: rgba(0, 255, 255, 0.6);
-  background-size: 40%;
+  background-color: @color1;
+  background-size: 30%;
   border-radius: 5px;
   animation: gradient_f 20s ease-in infinite;
   transition: all 0.3s cubic-bezier(0.55, 0, 0.28, 1.682);

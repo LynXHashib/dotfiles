@@ -4,8 +4,8 @@
 @define-color border #%%border%%;
 
 @define-color color0 rgba(%%color0.rgb%%,1);
-@define-color color1 rgba(%%color1.rgb%%,.4);
-@define-color color2 rgba(%%color2.rgb%%,1);
+@define-color color1 rgba(%%color1.rgb%%,1);
+@define-color color2 rgba(%%color2.rgb%%,.4);
 @define-color color3 rgba(%%color3.rgb%%,.4);
 @define-color color4 rgba(%%color4.rgb%%,1);
 @define-color color5 rgba(%%color5.rgb%%,1);
@@ -13,9 +13,9 @@
 @define-color color7 rgba(%%color7.rgb%%,1);
 @define-color color8 rgba(%%color8.rgb%%,1);
 @define-color color9 rgba(%%color9.rgb%%,1);
-@define-color color10 rgba(%%color10.rgb%%,1);
+@define-color color10 rgba(%%color10.rgb%%,.35);
 @define-color color11 rgba(%%color11.rgb%%,1);
 @define-color color12 rgba(%%color12.rgb%%,1);
 @define-color color13 rgba(%%color13.rgb%%,1);
-@define-color color14 rgba(%%color14.rgb%%,1);
-@define-color color15 rgba(%%color15.rgb%%,.3);
+@define-color color14 rgba(%%color14.rgb%%,.3);
+@define-color color15 rgba(%%color15.rgb%%,1);
