@@ -1,6 +1,6 @@
 #!/bin/bash
 # Path to the config.ini file
-CONFIG_FILE="/home/hashib/.config/waypaper/config.ini"
+CONFIG_FILE="/home/$USER/.config/waypaper/config.ini"
 
 # wallpaper=$(grep -oP '(?<=^wallpaper = ).*' <(grep -A 50 "\[Settings\]" "$CONFIG_FILE"))
 wallpaper=$(grep '^wallpaper =' ~/.config/waypaper/config.ini | sed 's/^wallpaper = //')
@@ -22,7 +22,7 @@ cp ~/.cache/hellwal/settings-vscode.json .config/Code\ -\ OSS/User/settings.json
 cp ~/.cache/hellwal/colors-vscode.json ~/.cache/wal/
 
 # -- Make image for rofi
-/home/hashib/Projects/myDotFiles/hypr/scripts/rofiwall.sh
+/home/$USER/Projects/myDotFiles/hypr/scripts/rofiwall.sh
 
 dunstify "Wallpaper Chnaged"
 pywalfox update

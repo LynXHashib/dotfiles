@@ -5,7 +5,7 @@ echo "Hello $wallpaper"
 
 wallpaperName=$(basename "$wallpaper" .png)
 echo $wallpaperName
-new_wallpaper="/home/hashib/wallpaper/rofi/${wallpaperName}.png"
+new_wallpaper="/home/$USER/wallpaper/rofi/${wallpaperName}.png"
 echo $new_wallpaper
 magick $wallpaper -resize 680x240\! $new_wallpaper
 
