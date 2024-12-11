@@ -1,0 +1,56 @@
+{
+  "files.autoSave": "onFocusChange",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "notebook.formatOnSave.enabled": true,
+  "workbench.sideBar.location": "right",
+  "notebook.defaultFormatter": "esbenp.prettier-vscode",
+  "accessibility.signals.format": {
+    "sound": "always"
+  },
+  "window.menuBarVisibility": "toggle",
+  "explorer.confirmDelete": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "git.autofetch": true,
+  "workbench.startupEditor": "none",
+  "git.enableSmartCommit": true,
+  "editor.tokenColorCustomizations": {
+    "functions": "#%%color1%%",
+    "keywords": "#%%color9%%",
+    "numbers": "#%%color10%%",
+    "strings": "#%%color15%%",
+    "types": "#%%color12%%",
+    "variables": "#%%color13%%",
+    "comments": "#%%color15%%4b",
+    "textMateRules": [
+      {
+        "scope": "meta.body.function.definition.cpp",
+        "settings": {
+          "foreground": "#%%color14%%"
+        }
+      },
+      {
+        "scope": "punctuation.section.arguments.end.bracket.round.function.call.cpp",
+        "settings": {
+          "foreground": "#%%color10%%"
+        }
+      },
+      {
+        "scope": "entity.name.scope-resolution",
+        "settings": {
+          "foreground": "#%%color2%%"
+        }
+      },
+      {
+        "scope": "support.type.property-name",
+        "settings": {
+          "foreground": "#%%color1%%"
+        }
+      }
+    ]
+  },
+  "workbench.colorCustomizations": {
+    "editor.background": "#%%background%%6a"
+  },
+  "workbench.colorTheme": "Wal"
+}

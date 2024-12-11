@@ -17,7 +17,8 @@
     "wlr/taskbar",
     "tray",
     "image",
-    "custom/mediaplayer"
+    // "custom/mediaplayer",
+    "hyprland/window"
   ],
   "modules-center": ["hyprland/workspaces"],
   "modules-right": [

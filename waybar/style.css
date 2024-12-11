@@ -16,8 +16,8 @@
 @define-color hoverbackground @color14;
 * {
   /* `otf-font-awesome` is required to be installed for icons */
-  font-family: "Font Awesome 6 Free", FontAwesome, Roboto, Helvetica, Arial,
-    sans-serif;
+  /* font-family: "Font Awesome 6 Free", FontAwesome, Roboto, Helvetica, Arial,
+    sans-serif; */
   border: none;
   border-radius: 0px;
   min-height: 0;
@@ -102,15 +102,15 @@ tooltip label {
 * ----------------------------------------------------- */
 
 #window {
-  background: @backgroundcolor;
-  margin: 5px 15px 5px 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  /* background: @backgroundcolor; */
+  margin: 5px 10px 5px 0px;
   padding: 2px 10px 0px 10px;
   border-radius: 12px;
   color: @textcolor1;
   font-size: 16px;
   font-weight: normal;
-
-  border: 3px solid @bordercolor;
+  border-bottom: 2px solid @bordercolor;
 }
 
 window#waybar.empty #window {
@@ -192,9 +192,7 @@ window#waybar.empty #window {
 #custom-calculator,
 #custom-windowsvm,
 #custom-cliphist,
-#custom-wallpaper,
 #custom-settings,
-#custom-wallpaper,
 #custom-system,
 #custom-hyprshade,
 #custom-hypridle,
@@ -340,7 +338,7 @@ window#waybar.empty #window {
   font-size: 16px;
   color: @textcolor1;
   border-radius: 15px;
-  padding: 2px 10px 0px 10px;
+  padding: 0px 10px 0px 10px;
   margin: 5px 15px 5px 0px;
 
   border: 2px solid @bordercolor;
@@ -430,7 +428,7 @@ window#waybar.empty #window {
   font-size: 16px;
   color: @textcolor1;
   border-radius: 15px;
-  padding: 2px 10px 2px 10px;
+  padding: 0px 10px 0px 10px;
   margin: 5px 15px 5px 0px;
 
   border: 2px solid @bordercolor;

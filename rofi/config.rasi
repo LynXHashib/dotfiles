@@ -15,7 +15,6 @@ configuration {
 
 @theme "~/.cache/hellwal/colors-rofi.rasi"
 
-
 // Main //
 window {
     height:                      30em;

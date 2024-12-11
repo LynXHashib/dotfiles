@@ -13,13 +13,20 @@ echo "Set wallpaper to $wallpaper"
 
 killall waybar
 
-hellwal -i $wallpaper
+hellwal --bright-offset 0 -i $wallpaper
 
 echo "Applied hellwal with $wallpaper"
 
+cp ~/.cache/hellwal/colors.json ~/.cache/wal/
+cp ~/.cache/hellwal/settings-vscode.json .config/Code\ -\ OSS/User/settings.json 
+cp ~/.cache/hellwal/colors-vscode.json ~/.cache/wal/
+
+# -- Make image for rofi
+/home/hashib/Projects/myDotFiles/hypr/scripts/rofiwall.sh
+
 dunstify "Wallpaper Chnaged"
-
-
+pywalfox update
 waybar
-# pywalfox upadte
-gi
+
+fi
+
