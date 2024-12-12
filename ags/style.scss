@@ -1,20 +1,129 @@
-// https://gitlab.gnome.org/GNOME/gtk/-/blob/gtk-3-24/gtk/theme/Adwaita/_colors-public.scss
-$theme_fg_color: "@theme_fg_color";
-$theme_bg_color: "@theme_bg_color";
-
+@use "sass:color";
+@import "../../.cache/hellwal/ags.scss";
+$bg: transparent;
+$fg: #f1f1f1;
+$accent: #378df7;
+$radius: 16px;
+$backgroundcolor: $color10;
+$bordercolor: $color5;
+$textcolor1: $color7;
+$iconcolor: $color7;
+$workspacesbackground: $color1;
+$hoverbackground: $color14;
 window.Bar {
-    background: transparent;
-    color: #{$theme_bg_color};
+  border: none;
+  box-shadow: none;
+  background-color: $bg;
+  color: $textcolor1;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-top: 10px;
+
+  button {
+    all: unset;
+
+    &:hover label {
+      background-color: color.adjust($workspacesbackground, $alpha: -0.84);
+      border-color: color.adjust($bordercolor, $alpha: -0.8);
+    }
+
+    &:active {
+      background: rgba($color: $workspacesbackground, $alpha: 1);
+    }
+  }
+
+  label {
+    border-radius: 18px;
+    transition: 200ms;
+    padding: 0 8px;
+    margin: 2px;
+    border-radius: $radius;
+  }
+  .Workspaces {
+    background: rgba(255, 255, 255, 0.5);
+    margin: 2px 1px 3px 1px;
+    padding: 0px 1px;
+    border-radius: 15px;
+    border: 0px;
     font-weight: bold;
+    font-style: normal;
 
-    >centerbox {
-        background: #{$theme_bg_color};
-        border-radius: 10px;
-        margin: 8px;
+    font-size: 16px;
+    color: $textcolor1;
+    // &:label {
+    //   background: rgba($color: $workspacesbackground, $alpha: 1);
+    // }
+  }
+  .Workspaces label {
+    padding: 0px 5px;
+    margin: 4px 3px;
+    border-radius: 15px;
+    border: 0px;
+    color: $textcolor1;
+    background-color: $workspacesbackground;
+    transition: all 0.3s ease-in-out;
+    opacity: 0.6;
+  }
+
+  .Workspaces .focused label {
+    color: $textcolor1;
+    background: $workspacesbackground;
+    border-radius: 15px;
+    min-width: 35px;
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+  }
+
+  .FocusedClient {
+    color: $accent;
+  }
+
+  .Media .Cover {
+    min-height: 1.2em;
+    min-width: 1.2em;
+    border-radius: $radius;
+    background-position: center;
+    background-size: contain;
+    // border: 3px solid $bordercolor;
+  }
+
+  .Battery {
+    padding: 0;
+    margin: 0;
+    border: 3px solid $bordercolor;
+    border-radius: $radius;
+  }
+
+  .AudioSlider {
+    * {
+      all: unset;
     }
 
-    button {
-        border-radius: 8px;
-        margin: 2px;
+    icon {
+      margin-right: 0.6em;
     }
+
+    & {
+      margin: 0 1em;
+    }
+
+    trough {
+      background-color: color.adjust($fg, $alpha: -0.8);
+      border-radius: $radius;
+    }
+
+    highlight {
+      background-color: $accent;
+      min-height: 0.8em;
+      border-radius: $radius;
+    }
+
+    slider {
+      background-color: $fg;
+      border-radius: $radius;
+      min-height: 1em;
+      min-width: 1em;
+      margin: -0.2em;
+    }
+  }
 }
