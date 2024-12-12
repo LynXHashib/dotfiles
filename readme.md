@@ -1,6 +1,7 @@
 These are dotfiles of my config. Ags folder is unnecessary, maybe something I will use in future.
+Git clone this repo and paste these folder in ~/.config folder in arch or whatever it is in your distro.
 
-# Dependenchies
+# Dependenchies(For arch)
 
 ```
 pacman -S kitty hyprland rofi-wayland waybar swww zsh zsh-autosuggestions zsh-syntax-highlighting fastfetch imagemagick
