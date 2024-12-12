@@ -8,7 +8,6 @@ pacman -S kitty hyprland rofi-wayland waybar swww zsh zsh-autosuggestions zsh-sy
 
 ```
 yay -S python-pywal16 hellwal waypaper wlogout
-
 ```
 
 ### oh-my-zsh is used for shell theme
