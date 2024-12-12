@@ -8,3 +8,5 @@ These are dotfiles of my config. Ags folder is unnecessary, maybe something I wi
 ![screenshot4](https://github.com/LynXHashib/dotfiles/blob/main/wallpaper/screenshots/ss4.png)
 ![screenshot5](https://github.com/LynXHashib/dotfiles/blob/main/wallpaper/screenshots/ss5.png)
 ![screenshot6](https://github.com/LynXHashib/dotfiles/blob/main/wallpaper/screenshots/ss6.png)
+![screenshot7](https://github.com/LynXHashib/dotfiles/blob/main/wallpaper/screenshots/ss7.png)
+![screenshot8](https://github.com/LynXHashib/dotfiles/blob/main/wallpaper/screenshots/ss8.png)
