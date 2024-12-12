@@ -25,12 +25,7 @@
     // "backlight/slider",
     //"mpris",
     //"cava",
-    "pulseaudio",
-    "bluetooth",
-    "battery",
-    // "backlight",
-    "network",
-
+    "group/rightside",
     "clock",
     "group/hardware",
     "custom/power"

@@ -89,7 +89,7 @@ tooltip {
 
   background: @bordercolor;
 
-  padding: 20px;
+  padding: 8px 12px 8px 12px;
   margin: 0px;
 }
 
@@ -332,17 +332,17 @@ window#waybar.empty #window {
 * Pulseaudio
 * ----------------------------------------------------- */
 
-#pulseaudio {
-  /* background-color: @hoverbackground; */
+/* #pulseaudio {
+  // background-color: @hoverbackground; 
   background: @backgroundcolor;
   font-size: 16px;
-  color: @textcolor1;
+  color: @textcolor1;s
   border-radius: 15px;
   padding: 0px 10px 0px 10px;
   margin: 5px 15px 5px 0px;
 
   border: 2px solid @bordercolor;
-}
+} */
 
 #pulseaudio.muted {
   background-color: @backgrounddark;
@@ -353,8 +353,8 @@ window#waybar.empty #window {
 * Network
 * ----------------------------------------------------- */
 
-#network {
-  /* background-color: @hoverbackground; */
+/* #network {
+  background-color: @hoverbackground;
   font-size: 16px;
   background: @backgroundcolor;
   color: @textcolor1;
@@ -371,24 +371,24 @@ window#waybar.empty #window {
 }
 
 #network.wifi {
-  /* background-color: @hoverbackground; */
+  background-color: @hoverbackground;
   color: @textcolor1;
   background: @backgroundcolor;
-}
+} */
 
 /* -----------------------------------------------------
 * Bluetooth
 * ----------------------------------------------------- */
 
-#bluetooth,
+/* #bluetooth,
 #bluetooth.on,
 #bluetooth.connected {
-  /* background-color: @backgroundlight; */
+  background-color: @backgroundlight; 
   background: @backgroundcolor;
   font-size: 16px;
   color: @textcolor1;
   border-radius: 15px;
-  /* padding-right: 16px; */
+  padding-right: 16px; 
   margin: 5px 15px 5px 0px;
 
   border: 2px solid @bordercolor;
@@ -398,11 +398,11 @@ window#waybar.empty #window {
   font-size: 16px;
   color: @textcolor1;
   border-radius: 15px;
-  /* padding-right: 16px; */
+  padding-right: 16px; 
   margin: 5px 15px 5px 0px;
 
   border: 2px solid @bordercolor;
-}
+} */
 
 /* -----------------------------------------------------
 * Battery
@@ -418,9 +418,33 @@ window#waybar.empty #window {
 /* RIGHT SIDE BLUETOOTH APPMENU AUDIO WIFI CLOCK*/
 
 #battery,
-#pulseaudiO,
+#pulseaudio,
 #network,
-#bluetooth,
+#bluetooth {
+  background: @backgroundcolor;
+  font-size: 16px;
+  color: @textcolor1;
+  border-radius: 15px;
+
+  border: 2px solid @bordercolor;
+  font-weight: bold;
+
+  margin: 5px 12px 5px 0px;
+  padding: 0px 10px 0px 10px;
+  /* box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5); */
+  /* text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); */
+}
+/* #rightside {
+  background: @backgroundcolor;
+  font-size: 16px;
+  color: @textcolor1;
+  border-radius: 15px;
+  padding: 0px 10px 0px 10px;
+  margin: 5px 15px 5px 0px;
+
+  border: 2px solid @bordercolor;
+  font-weight: bold;
+} */
 #clock,
 #tray,
 #cava {
@@ -444,6 +468,7 @@ window#waybar.empty #window {
 #custom-appmenuicon:hover,
 #custom-wallpaper:hover {
   background: @hoverbackground;
+  border-radius: 16px;
 }
 @keyframes blink {
   to {

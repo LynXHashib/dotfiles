@@ -357,5 +357,9 @@
     "format": "{user}",
     "interval": 60,
     "icon": false
+  },
+  "group/rightside": {
+    "orientation": "horizontal",
+    "modules": ["pulseaudio", "bluetooth", "battery", "network"]
   }
 }
