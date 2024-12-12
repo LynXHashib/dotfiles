@@ -1,5 +1,18 @@
 These are dotfiles of my config. Ags folder is unnecessary, maybe something I will use in future.
 
+# Dependenchies
+
+```
+pacman -S kitty hyprland rofi-wayland waybar swww zsh zsh-autosuggestions zsh-syntax-highlighting fastfetch imagemagick
+```
+
+```
+yay -S python-pywal16 hellwal waypaper wlogout
+
+```
+
+### oh-my-zsh is used for shell theme
+
 # SCREENSHOTS
 
 ![screenshot](https://github.com/LynXHashib/dotfiles/blob/main/wallpaper/screenshots/20241212_14h13m41s_grim.png)
