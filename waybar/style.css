@@ -139,13 +139,13 @@ window#waybar.empty #window {
 * ----------------------------------------------------- */
 #taskbar {
   background: @backgroundcolor;
-  margin: 3px 1px 3px 0px;
+  margin: 5px 1px 5px 0px;
   /* padding: 0px; */
   border-radius: 15px;
   font-weight: normal;
   font-style: normal;
 
-  /* border: 3px solid @bordercolor; */
+  border: 2px solid @bordercolor;
 }
 #taskbar button:hover {
   background-color: @hoverbackground;
@@ -154,7 +154,7 @@ window#waybar.empty #window {
   /* transition: 1s;/ */
 }
 #taskbar button {
-  margin: 3px 1px 3px 0px;
+  margin: 0px 1px 0px 0px;
   border-radius: 15px;
   padding: 0px 5px 0px 5px;
 }
