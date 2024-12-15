@@ -16,8 +16,7 @@
 @define-color hoverbackground @color14;
 * {
   /* `otf-font-awesome` is required to be installed for icons */
-  /* font-family: "Font Awesome 6 Free", FontAwesome, Roboto, Helvetica, Arial,
-    sans-serif; */
+  font-family: "JetBrains Mono";
   border: none;
   border-radius: 0px;
   min-height: 0;
@@ -40,7 +39,7 @@ window#waybar {
 
 #workspaces {
   background: rgba(255, 255, 255, 0.5);
-  margin: 2px 1px 3px 1px;
+  margin: 5px 1px 5px 1px;
   padding: 0px 1px;
   border-radius: 15px;
   border: 0px;
@@ -139,7 +138,7 @@ window#waybar.empty #window {
 * ----------------------------------------------------- */
 #taskbar {
   background: @backgroundcolor;
-  margin: 5px 1px 5px 0px;
+  margin: 5px 12px 5px 4px;
   /* padding: 0px; */
   border-radius: 15px;
   font-weight: normal;
@@ -163,7 +162,7 @@ window#waybar.empty #window {
   background: @backgroundcolor;
   border: 0;
   padding: 0;
-  margin: 0;
+  margin: 5px;
 }
 
 /* -----------------------------------------------------
@@ -219,30 +218,6 @@ window#waybar.empty #window {
   background-color: #90b1b1;
 }
 
-#custom-tools {
-  margin-right: 12px;
-}
-
-#custom-hyprshade {
-  margin-right: 12px;
-}
-
-#custom-hypridle {
-  margin-right: 18px;
-}
-
-#custom-hypridle.active {
-  color: @iconcolor;
-}
-
-#custom-hypridle.notactive {
-  color: #dc2f2f;
-}
-
-#custom-system {
-  margin-right: 15px;
-}
-
 #custom-wallpaper {
   margin-right: 25px;
 }
@@ -284,9 +259,9 @@ window#waybar.empty #window {
   color: @textcolor1;
   border-radius: 15px;
   padding: 0px 10px 0px 10px;
-  margin: 3px 4px 3px 14px;
+  margin: 5px 4px 5px 14px;
 
-  border: 3px solid @bordercolor;
+  border: 2px solid @bordercolor;
 }
 #custom-wallpaper {
   background-color: @backgroundcolor;
@@ -294,9 +269,9 @@ window#waybar.empty #window {
   color: @textcolor1;
   border-radius: 15px;
   padding: 0px 10px 0px 10px;
-  margin: 3px 8px 3px 4px;
+  margin: 5px 8px 5px 4px;
 
-  border: 3px solid @bordercolor;
+  border: 2px solid @bordercolor;
 }
 
 /* -----------------------------------------------------
@@ -415,25 +390,6 @@ window#waybar.empty #window {
   background: @backgroundcolor;
 } */
 
-/* RIGHT SIDE BLUETOOTH APPMENU AUDIO WIFI CLOCK*/
-
-#battery,
-#pulseaudio,
-#network,
-#bluetooth {
-  background: @backgroundcolor;
-  font-size: 16px;
-  color: @textcolor1;
-  border-radius: 15px;
-
-  border: 2px solid @bordercolor;
-  font-weight: bold;
-
-  margin: 5px 12px 5px 0px;
-  padding: 0px 10px 0px 10px;
-  /* box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5); */
-  /* text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); */
-}
 /* #rightside {
   background: @backgroundcolor;
   font-size: 16px;
@@ -445,6 +401,10 @@ window#waybar.empty #window {
   border: 2px solid @bordercolor;
   font-weight: bold;
 } */
+#battery,
+#pulseaudio,
+#network,
+#bluetooth,
 #clock,
 #tray,
 #cava {
@@ -475,6 +435,10 @@ window#waybar.empty #window {
     background-color: @hoverbackground;
     color: @textcolor1;
   }
+}
+#battery,
+#bluetooth {
+  padding: 0px 15px 0px 10px;
 }
 
 #battery.critical:not(.charging) {

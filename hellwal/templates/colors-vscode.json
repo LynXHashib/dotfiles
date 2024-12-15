@@ -1,6 +1,6 @@
 {
   "editor.tokenColorCustomizations": {
-    "functions": "#%%color1%%",
+    "functions": "#%%color8%%",
     "keywords": "#%%color9%%",
     "numbers": "#%%color10%%",
     "strings": "#%%color15%%",
