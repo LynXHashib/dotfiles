@@ -25,7 +25,7 @@
   },
   "$schema": "vscode://schemas/color-theme",
   "type": "dark",
-  "colors": {
+  "workbench.colorCustomizations": {
     "activityBar.background": "#%%color0%%",
     "activityBar.border": "#%%color0%%",
     "activityBar.foreground": "#%%color8%%",
@@ -43,7 +43,7 @@
     "dropdown.background": "#161010",
     "dropdown.border": "#%%color8%%77",
     "dropdown.foreground": "#%%color15%%99",
-    "editor.background": "#0c0b0b6a",
+    "editor.background": "#0c0b0b",
     "editor.findMatchBackground": "#%%color1%%0e",
     "editor.findMatchBorder": "#%%color1%%",
     "editor.findMatchHighlightBackground": "#%%color1%%0e",

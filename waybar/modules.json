@@ -307,7 +307,7 @@
   "pulseaudio": {
     "scroll-step": 1, // %, can be a float
     "format": "{icon} {volume}%",
-    "format-bluetooth": "{volume}%  {icon} {format_source}",
+    "format-bluetooth": "{volume}% {icon} {format_source}",
     "format-bluetooth-muted": " {icon} {format_source}",
     "format-muted": " {format_source}",
     "format-source": "{volume}% ",
@@ -320,8 +320,8 @@
       "portable": " ",
       "car": " ",
       "default": [" ", " ", " "]
-    }
-    // "on-click": "pavucontrol &"
+    },
+    "on-click": "kcmshell6 kcm_pulseaudio"
   },
 
   // "pulseaudio/slider": {
@@ -335,7 +335,7 @@
     "tooltip-format": "{status}",
     "format-disabled": "",
     "format-off": " ",
-    "format-connected": "  ",
+    "format-connected": "󰂱 ",
     "interval": 30,
     "on-click": "~/.config/hypr/scripts/bluetooth.sh",
     "format-no-controller": ""

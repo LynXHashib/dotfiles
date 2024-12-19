@@ -16,8 +16,7 @@
     "custom/wallpaper",
     "wlr/taskbar",
     "tray",
-    "image",
-    // "custom/mediaplayer",
+
     "hyprland/window"
   ],
   "modules-center": ["hyprland/workspaces"],
@@ -25,6 +24,8 @@
     // "backlight/slider",
     //"mpris",
     //"cava",
+    // "image",
+    "custom/mediaplayer",
     "group/rightside",
     "clock",
     "group/hardware",

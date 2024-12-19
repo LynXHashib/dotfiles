@@ -26,6 +26,7 @@ cp ~/.cache/hellwal/colors-vscode.json ~/.cache/wal/
 
 dunstify "Wallpaper Chnaged"
 pywalfox update
+spicetify apply
 waybar
 
 fi

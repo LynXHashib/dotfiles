@@ -16,12 +16,12 @@
 @define-color hoverbackground @color14;
 * {
   /* `otf-font-awesome` is required to be installed for icons */
-  font-family: "JetBrains Mono";
+  font-family: "FiraCode Nerd", monospace;
   border: none;
   border-radius: 0px;
   min-height: 0;
   /* margin: 4px; */
-  /* font-size: 1px; */
+  font-size: 14px;
 }
 
 window#waybar {
@@ -46,7 +46,7 @@ window#waybar {
   font-weight: bold;
   font-style: normal;
 
-  font-size: 16px;
+  font-size: 14px;
   color: @textcolor1;
 }
 
@@ -107,7 +107,7 @@ tooltip label {
   padding: 2px 10px 0px 10px;
   border-radius: 12px;
   color: @textcolor1;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: normal;
   border-bottom: 2px solid @bordercolor;
 }
@@ -122,15 +122,13 @@ window#waybar.empty #window {
 #custom-mediaplayer {
   background-color: @backgroundcolor;
   /* background-image: url("/tmp/waybar-mediaplayer-art"); */
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 16px;
-  color: @textcolor3;
+  font-size: 14px;
+  color: @textcolor1;
   border-radius: 15px;
   padding: 0px 10px 0px 10px;
-  margin: 3px 4px 3px 14px;
+  margin: 5px 4px 5px 10px;
 
-  border: 3px solid @bordercolor;
+  border: 2px solid @bordercolor;
 }
 @import "./waybar-mediaplayer/src/style-catppuccin.css";
 /* -----------------------------------------------------
@@ -230,7 +228,7 @@ window#waybar.empty #window {
 /* -----------------------------------------------------
 * Idle Inhibator
 * ----------------------------------------------------- */
-
+/* 
 #idle_inhibitor {
   margin-right: 15px;
   font-size: 22px;
@@ -246,7 +244,7 @@ window#waybar.empty #window {
 
   color: #dc2f2f;
 }
-
+ */
 /* -----------------------------------------------------
 * Custom Modules
 * ----------------------------------------------------- */
@@ -255,21 +253,21 @@ window#waybar.empty #window {
 #custom-appmenuwlr,
 #custom-appmenuicon {
   background-color: @backgroundcolor;
-  font-size: 16px;
+  font-size: 14px;
   color: @textcolor1;
   border-radius: 15px;
-  padding: 0px 10px 0px 10px;
+  padding: 0px 10px 0px 8px;
   margin: 5px 4px 5px 14px;
 
   border: 2px solid @bordercolor;
 }
 #custom-wallpaper {
   background-color: @backgroundcolor;
-  font-size: 16px;
+  font-size: 14px;
   color: @textcolor1;
   border-radius: 15px;
-  padding: 0px 10px 0px 10px;
-  margin: 5px 8px 5px 4px;
+  padding: 0px 8px 0px 8px;
+  margin: 5px 4px 5px 4px;
 
   border: 2px solid @bordercolor;
 }
@@ -288,14 +286,14 @@ window#waybar.empty #window {
 /* -----------------------------------------------------
 * Hardware Group
 * ----------------------------------------------------- */
-
+#hardware,
 #disk,
 #memory,
 #cpu,
 #language {
   margin: 0px;
   padding: 0px;
-  font-size: 16px;
+  font-size: 14px;
   color: @iconcolor;
 }
 
@@ -310,7 +308,7 @@ window#waybar.empty #window {
 /* #pulseaudio {
   // background-color: @hoverbackground; 
   background: @backgroundcolor;
-  font-size: 16px;
+  font-size: 14px;
   color: @textcolor1;s
   border-radius: 15px;
   padding: 0px 10px 0px 10px;
@@ -330,7 +328,7 @@ window#waybar.empty #window {
 
 /* #network {
   background-color: @hoverbackground;
-  font-size: 16px;
+  font-size: 14px;
   background: @backgroundcolor;
   color: @textcolor1;
   border-radius: 15px;
@@ -360,20 +358,20 @@ window#waybar.empty #window {
 #bluetooth.connected {
   background-color: @backgroundlight; 
   background: @backgroundcolor;
-  font-size: 16px;
+  font-size: 14px;
   color: @textcolor1;
   border-radius: 15px;
-  padding-right: 16px; 
+  padding-right: 14px; 
   margin: 5px 15px 5px 0px;
 
   border: 2px solid @bordercolor;
 }
 #bluetooth.off {
   background: @backgroundcolor;
-  font-size: 16px;
+  font-size: 14px;
   color: @textcolor1;
   border-radius: 15px;
-  padding-right: 16px; 
+  padding-right: 14px; 
   margin: 5px 15px 5px 0px;
 
   border: 2px solid @bordercolor;
@@ -392,7 +390,7 @@ window#waybar.empty #window {
 
 /* #rightside {
   background: @backgroundcolor;
-  font-size: 16px;
+  font-size: 14px;
   color: @textcolor1;
   border-radius: 15px;
   padding: 0px 10px 0px 10px;
@@ -409,7 +407,7 @@ window#waybar.empty #window {
 #tray,
 #cava {
   background: @backgroundcolor;
-  font-size: 16px;
+  font-size: 14px;
   color: @textcolor1;
   border-radius: 15px;
   padding: 0px 10px 0px 10px;
@@ -428,7 +426,7 @@ window#waybar.empty #window {
 #custom-appmenuicon:hover,
 #custom-wallpaper:hover {
   background: @hoverbackground;
-  border-radius: 16px;
+  border-radius: 14px;
 }
 @keyframes blink {
   to {
