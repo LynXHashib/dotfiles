@@ -1,4 +1,4 @@
-@import "../../.cache/hellwal/colors-waybar.css";
+@import '../../.cache/hellwal/colors-waybar.css';
 /* @define-color hoverbackground @color10;
 @define-color backgroundcolor @color1;
 @define-color backgrounddark @color5;
@@ -16,7 +16,7 @@
 @define-color hoverbackground @color14;
 * {
   /* `otf-font-awesome` is required to be installed for icons */
-  font-family: "FiraCode Nerd", monospace;
+  font-family: 'FiraCode Nerd', monospace;
   border: none;
   border-radius: 0px;
   min-height: 0;
@@ -130,7 +130,7 @@ window#waybar.empty #window {
 
   border: 2px solid @bordercolor;
 }
-@import "./waybar-mediaplayer/src/style-catppuccin.css";
+@import './waybar-mediaplayer/src/style-catppuccin.css';
 /* -----------------------------------------------------
 * Taskbar
 * ----------------------------------------------------- */

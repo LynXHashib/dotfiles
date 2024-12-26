@@ -31,11 +31,11 @@ alias waycfg="code ${HOME}/.config/waybar"
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
-# (cat ~/.cache/wal/sequences &)
+(cat ~/.cache/wal/sequences &)
 
-# cat ~/.cache/wal/sequences
+cat ~/.cache/wal/sequences
 
-# source ~/.cache/wal/colors-tty.sh
-source ~/.cache/hellwal/variables.sh
-sh ~/.cache/hellwal/terminal.sh
+source ~/.cache/wal/colors-tty.sh
+# source ~/.cache/hellwal/variables.sh
+# sh ~/.cache/hellwal/terminal.sh
 fastfetch

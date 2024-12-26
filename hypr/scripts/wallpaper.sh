@@ -13,13 +13,14 @@ echo "Set wallpaper to $wallpaper"
 
 killall waybar
 
-hellwal --bright-offset 0 -i $wallpaper
-
+hellwal -i $wallpaper
 echo "Applied hellwal with $wallpaper"
+wal --cols16 -i $wallpaper
+echo "Applied wal with $wallpaper"
 
-cp ~/.cache/hellwal/colors.json ~/.cache/wal/
-cp ~/.cache/hellwal/settings-vscode.json .config/Code\ -\ OSS/User/settings.json 
-cp ~/.cache/hellwal/colors-vscode.json ~/.cache/wal/
+# cp ~/.cache/hellwal/colors.json ~/.cache/wal/
+# cp ~/.cache/hellwal/settings-vscode.json .config/Code\ -\ OSS/User/settings.json 
+# cp ~/.cache/hellwal/colors-vscode.json ~/.cache/wal/
 
 # -- Make image for rofi
 /home/$USER/Projects/myDotFiles/hypr/scripts/rofiwall.sh
