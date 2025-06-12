@@ -1,6 +1,9 @@
 These are dotfiles of my config. Ags folder is unnecessary, maybe something I will use in future.
 Git clone this repo and paste these folder in ~/.config folder in arch or whatever it is in your distro.
 
+Note - 1. Change 'HDMI-A-3' to whatever your monitors name is in waybar.
+       2. Copy the .zshrc and .p10k to ~/
+       3. Copy the wallpaper folder to ~/wallpaper. After that apply wallpaper using waypaper, now everything should work as              expected
 # Dependenchies(For arch)
 
 ```
